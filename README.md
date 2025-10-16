@@ -171,3 +171,32 @@ A Booking ➜ belongs to one Property and one Guest
 A Review ➜ belongs to one Property and one Guest
 
 A Payment ➜ belongs to one Booking
+
+### Feature Breakdown
+1. User Management
+
+This feature allows users to register, log in, and manage their profiles. Users can act as hosts (listing properties) or guests (booking stays). It ensures secure authentication and role-based access throughout the platform.
+
+2. Property Management
+
+Hosts can create, update, and delete property listings. Each property includes details such as title, description, price per night, and location. This feature helps hosts manage their offerings and makes it easy for guests to browse available options.
+
+3. Booking System
+
+The booking system enables guests to reserve properties for specific dates. It checks availability, prevents overlapping reservations, and updates property status automatically. This ensures a smooth and reliable booking experience for users.
+
+4. Review & Rating System
+
+After completing a stay, guests can leave a review and rate the property. These reviews help future guests make informed decisions and provide valuable feedback to hosts to improve their services.
+
+5. Payment Integration
+
+This feature manages payments for bookings, ensuring that transactions are secure and tracked. It supports different payment methods and handles payment statuses such as pending, completed, or failed, giving users confidence when making reservations.
+
+6. Search & Filter
+
+Guests can search for properties based on criteria such as location, price range, or number of guests. Filtering makes it easy to find the perfect stay quickly, improving overall user experience and engagement.
+
+7. Admin Dashboard (optional enhancement)
+
+An admin panel allows administrators to monitor platform activity, manage users, and remove inappropriate listings or reviews. This feature ensures the platform remains safe, organized, and well-maintained.

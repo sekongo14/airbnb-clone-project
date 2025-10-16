@@ -240,3 +240,40 @@ Why it’s important: This ensures that sensitive financial data is never stored
 
 All authentication attempts, transactions, and errors will be logged and monitored for unusual behavior.
 Why it’s important: Continuous monitoring allows quick detection of potential attacks and improves the ability to respond to security incidents in real-time.
+
+
+⚙️ CI/CD Pipeline
+What is CI/CD?
+
+CI/CD (Continuous Integration and Continuous Deployment) is a modern development practice that automates the process of building, testing, and deploying applications.
+
+Continuous Integration (CI) ensures that every change pushed to the codebase is automatically tested and verified.
+
+Continuous Deployment (CD) automates the release process, allowing new versions of the application to be deployed quickly and safely.
+
+Why It’s Important for This Project
+
+Implementing a CI/CD pipeline ensures faster development cycles, higher code quality, and fewer manual errors.
+For the Airbnb Clone project, CI/CD will:
+
+Automatically run tests whenever code is committed to detect bugs early.
+
+Build and deploy the backend and frontend efficiently.
+
+Maintain consistent environments between development, staging, and production.
+
+Enable quick delivery of new features and bug fixes with minimal downtime.
+
+In short, CI/CD makes the project more reliable, scalable, and developer-friendly.
+
+Tools That Can Be Used
+
+GitHub Actions: For automating build, test, and deployment workflows directly from the GitHub repository.
+
+Docker: To containerize the application, ensuring consistency across environments.
+
+Docker Compose or Kubernetes: For orchestrating multi-service deployments (e.g., backend, database, frontend).
+
+AWS / Heroku / Render / DigitalOcean: For hosting and deploying the application automatically from the pipeline.
+
+pytest / Jest: For running automated backend and frontend tests during the CI phase.

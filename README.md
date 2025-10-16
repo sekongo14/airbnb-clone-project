@@ -200,3 +200,43 @@ Guests can search for properties based on criteria such as location, price range
 7. Admin Dashboard (optional enhancement)
 
 An admin panel allows administrators to monitor platform activity, manage users, and remove inappropriate listings or reviews. This feature ensures the platform remains safe, organized, and well-maintained.
+
+
+### API Security 🔒 
+
+Securing the backend APIs is a critical part of building a reliable and trustworthy Airbnb Clone. This section outlines the main security measures that will be implemented to protect user data, prevent unauthorized access, and ensure safe transactions.
+
+1. Authentication
+
+All users must authenticate before accessing protected resources using secure methods such as JWT (JSON Web Tokens) or OAuth2.
+Why it’s important: Authentication ensures that only verified users can access their data or perform sensitive actions, preventing identity theft or account misuse.
+
+2. Authorization
+
+Role-based access control (RBAC) will be implemented to restrict actions based on user roles (e.g., Host, Guest, Admin).
+Why it’s important: It ensures users can only perform actions they are permitted to — for example, a guest cannot modify another host’s property, and an admin has extended privileges for platform management.
+
+3. Data Encryption
+
+Sensitive data such as passwords and payment information will be encrypted both in transit (HTTPS) and at rest (database encryption).
+Why it’s important: Encryption prevents attackers from intercepting or accessing private information, ensuring confidentiality and integrity of user data.
+
+4. Rate Limiting
+
+API rate limiting will be enforced to prevent excessive requests and protect the system from DDoS attacks or brute-force login attempts.
+Why it’s important: This maintains server performance and prevents malicious users from overloading or abusing the API.
+
+5. Input Validation & Sanitization
+
+All user input will be validated and sanitized to prevent SQL Injection, Cross-Site Scripting (XSS), and other common vulnerabilities.
+Why it’s important: Input validation ensures that only clean, expected data enters the system, keeping the backend and database safe from exploitation.
+
+6. Secure Payment Processing
+
+Payment APIs will integrate with trusted third-party services (e.g., Stripe, PayPal) using tokenized transactions.
+Why it’s important: This ensures that sensitive financial data is never stored on our servers, reducing the risk of data breaches and fraud.
+
+7. Logging and Monitoring
+
+All authentication attempts, transactions, and errors will be logged and monitored for unusual behavior.
+Why it’s important: Continuous monitoring allows quick detection of potential attacks and improves the ability to respond to security incidents in real-time.
